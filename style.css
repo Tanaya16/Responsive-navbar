@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.menu-right{
+    text-align: right;
+    /* border: solid rgb(0, 255, 26); */
+    color: white;
+    
+}
+
+ul li{
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+    /* border: solid red; */
+}
+
+ul li:hover{
+    background-color: rgba(255, 255, 255, 0.163);
+    color: rgb(3, 36, 41);
+}
+
+.navbar{
+    /* border: solid rgb(242, 0, 255); */
+    background-color: rgb(50, 87, 92);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 10vh;
+}
+
+span{
+    margin: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    /* border: solid rgb(200, 255, 0); */
+}
+
+.brand-name{
+    color: wheat;
+    /* border: solid rgb(0, 255, 247); */
+}
+
+.logo
+{display: none;
+    color: wheat;
+}
+
+@media (max-width: 700px){
+    span{
+        display: block;
+    }
+    ul li{
+        display: block;
+        margin-top: 3rem;
+        border-radius: 5px;
+        width: 5rem;
+        padding: 5px;
+    }
+    ul{
+        display: none;
+        background-color: rgb(100, 43, 43);
+    }
+    .logo{
+        display: block;
+    }
+    .brand-name{
+        display: none;
+    }
+}
